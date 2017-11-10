@@ -10,19 +10,18 @@ var logo = 'Anabel-Group-Logo.png'
 var img1 = 'dreamstime_m_26715818.jpg'
 var img2 = 'dreamstimelarge_11506280.jpg'
 var img3 = 'dreamstimelarge_12628328.jpg'
-var img4 = 'dreamstimelarge_12628328.jpg'
-var img5 = 'dreamstimelarge_19440797.jpg'
-var img6 = 'dreamstimelarge_29000630.jpg'
-var img7 = 'dreamstimelarge_38754330.jpg'
-var img8 = 'dreamstimelarge_39551803.jpg'
-var img9 = 'dreamstimelarge_51791878.jpg'
-var img10 = 'dreamstimelarge_53728429.jpg'
-var img11 = 'dreamstimelarge_56914984.jpg'
-var img12 = 'dreamstimelarge_59356200.jpg'
-var img13 = 'dreamstimelarge_60831384.jpg'
-var img14 = 'dreamstimelarge_85739545.jpg'
-var img15 = 'dreamstimelarge_91081967.jpg'
-var img16 = 'shutterstock_178724246-2.jpg'
+var img4 = 'dreamstimelarge_19440797.jpg'
+var img5 = 'dreamstimelarge_29000630.jpg'
+var img6 = 'dreamstimelarge_38754330.jpg'
+var img7 = 'dreamstimelarge_39551803.jpg'
+var img8 = 'dreamstimelarge_51791878.jpg'
+var img9 = 'dreamstimelarge_53728429.jpg'
+var img10 = 'dreamstimelarge_56914984.jpg'
+var img11 = 'dreamstimelarge_59356200.jpg'
+var img12 = 'dreamstimelarge_60831384.jpg'
+var img13 = 'dreamstimelarge_85739545.jpg'
+var img14 = 'dreamstimelarge_91081967.jpg'
+var img15 = 'shutterstock_178724246-2.jpg'
 
 /*******************************************************************************
   STYLE (css)
@@ -99,7 +98,7 @@ var screen = bel`
   <div class="Screen">
     <img class="mySlides" src=${base + img1} style="width:85.5%">
     <img class="mySlides" src=${base + img2} style="width:85.5%">
-    <img class="mySlides" src=${base + img3} style="width:85.5%">
+    <img class="mySlides" src=${base + img3} style="width:120%">
     <img class="mySlides" src=${base + img4} style="width:85.5%">
     <img class="mySlides" src=${base + img5} style="width:85.5%">
     <img class="mySlides" src=${base + img6} style="width:85.5%">
@@ -108,11 +107,10 @@ var screen = bel`
     <img class="mySlides" src=${base + img9} style="width:85.5%">
     <img class="mySlides" src=${base + img10} style="width:85.5%">
     <img class="mySlides" src=${base + img11} style="width:85.5%">
-    <img class="mySlides" src=${base + img12} style="width:85.5%">
+    <img class="mySlides" src=${base + img12} style="width:120%">
     <img class="mySlides" src=${base + img13} style="width:85.5%">
     <img class="mySlides" src=${base + img14} style="width:85.5%">
     <img class="mySlides" src=${base + img15} style="width:85.5%">
-    <img class="mySlides" src=${base + img16} style="width:85.5%"> 
     </div>
 `
 var footer1 = bel`
