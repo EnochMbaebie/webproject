@@ -1,8 +1,0 @@
-{
-	"name": "webproject",
-	"author": "@EnochMbaebie",
-	"version": "1.0.0",
-	"dependencies": {
-		"bel": "^5.1.5"
-	}
-}
