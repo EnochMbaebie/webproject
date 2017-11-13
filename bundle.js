@@ -23,6 +23,8 @@ var img12 = 'dreamstimelarge_60831384.jpg'
 var img13 = 'dreamstimelarge_85739545.jpg'
 var img14 = 'dreamstimelarge_91081967.jpg'
 var img15 = 'shutterstock_178724246-2.jpg'
+var img16 = 'bckgrod.jpg'
+
 
 /*******************************************************************************
   STYLE (css)
@@ -41,8 +43,8 @@ var style = bel`
       margin: 0;
       padding: 0;
       width: 17%;
-      background: #f1f1f1;
-      background-image: #202024 url(${base + menubackground});
+      background: rgb(0, 0, 255);
+      background-image: url(${base + menubackground});
       position: fixed;
       height: 100%;
       right: 0;
@@ -81,9 +83,9 @@ var menu = bel`
   <div class="Menu">
     <ul>
       <div class="Anabel-Group-Logo">
-        <li><a href="#"><img src=${base + logo}></a></li>
+        <a href="#"><img src=${base + logo}></a>
       </div>
-      <li><a href="index.html" class="over">Home</a></li>
+      <li><a href="index.html" class="over">HOME</a></li>
       <li><a href="strategy.html" >STRATEGY</a></li>
       <li><a href="capital.html">CAPITAL</a></li>
       <li><a href="leadership.html">LEADERSHIP</a></li>
@@ -115,59 +117,27 @@ var screen = bel`
     </div>
 `
 var footer1 = bel`
-  <footer class="x-colophon top" role="contentinfo">
-    <div class="x-container-fluid max width">
-      <div class="x-row-fluid">
-        <div class="x-span4">
-          <div id="text-4" class="widget widget_text">
-            <h4 class="h-widget">About Us</h4>
-            <div class="textwidget"> </div>
-          </div>
-        </div>
-        <div class="x-span4">
-          <div id="text-3" class="widget widget_text">
-            <h4 class="h-widget">Contact Us</h4>
-            <div class="textwidget">
-              Anabel Leadership Academy
-              <br> 17B Dan Ogbeide Close Off Oyibo Adjarho Street, Off Ayimade Street off Admiralty Way, Lagos
-              <br> Lekki Phase 1
-              <br> Lagos Nigeria
-              <br> P.O. Box 50802, Washington DC 20091, United States Of America
-              <br> Tel: +234 1 2771388
-              <br> Email : info@anabelleadershipacademy.com
-              <br> Website : www.anabelleadershipacademy.com</div>
-          </div>
-        </div>
-        <div class="x-span4">
-          <div id="text-2" class="widget widget_text">
-            <h4 class="h-widget">Certifications</h4>
-            <div class="textwidget">
-              <div class="cbg">
-                <div class="pad20">
-                  <img src="http://www.anabelleadershipacademy.com">
-                  <br>Test
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      <!-- end .x-row-fluid --></div>
-    <!-- end .x-container-fluid.max.width --></div>
-  <!-- end .x-colophon.top --></footer>
+<div>
+  <h2 align="left"> Our Mission </h2>
+  <p class="Profile">
+    We are educating Leaders with our leadership academy, engaging future leaders.
+  </p>
+  <h2 align="left"> Our Vision </h2>
+  <p>
+
+To be the most trusted and respected professional services firm recognized by our clients for delivering excellence.</p>
+ </div>
+
+
 `
 var footer2 = bel`
-  <footer class="x-colophon bottom" role="contentinfo">
-    <div class="x-container-fluid max width">
-      <ul class="x-nav">
-        <li>
-          <a href="http://www.anabelleadershipacademy.com/wp-admin/nav-menus.php">Assign a Menu</a>
-        </li>
-      </ul>
-      <div class="x-social-global"></div>
-      <div class="x-colophon-content">
-        ANABEL LEADERSHIP ACADEMY © 2017
-      </div>
-    </div>
+    <footer>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+      </nav>
   </footer>
 `
 /*******************************************************************************
@@ -193,6 +163,16 @@ function cycle() {
 }
 
 cycle()
+
+
+
+var str1 = src = image/bckgrod.jpeg;
+document.getElementById("divtest").style.backgroundImage = str1 ;
+
+var str2 = src = image/bckgrod.jpeg;
+document.getElementById("imgtest").src = str2;
+
+
 
 },{"bel":3}],2:[function(require,module,exports){
 var trailingNewlineRegex = /\n[\s]+$/
