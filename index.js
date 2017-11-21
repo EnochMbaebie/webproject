@@ -152,6 +152,7 @@ var footer2 = bel`
           <li><a href="about.html">ABOUT US</a></li>
         </ul>
       </nav>
+     </div>
   </footer>
 `
 var foot1 = bel`
@@ -178,6 +179,7 @@ var foot1 = bel`
 	  <li>
 	    <img src=${base + img23}>
 	  </li>
+	 </div>
 
 `
 /*******************************************************************************
@@ -186,9 +188,9 @@ var foot1 = bel`
 document.head.appendChild(style)
 document.body.appendChild(menu)
 document.body.appendChild(screen)
-document.body.appendChild(foot1)
 document.body.appendChild(footer1)
 document.body.appendChild(footer2)
+document.body.appendChild(foot1)
 /*******************************************************************************
   MORE JAVASCRIPT
 *******************************************************************************/
