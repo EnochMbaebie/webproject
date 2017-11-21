@@ -23,6 +23,13 @@ var img13 = 'dreamstimelarge_85739545.jpg'
 var img14 = 'dreamstimelarge_91081967.jpg'
 var img15 = 'shutterstock_178724246-2.jpg'
 var img16 = 'bckgrod.jpg'
+var img17 = 'logo-anabel-energy.png'
+var img18 = 'logo-anabelcapital.png'
+var img19 = 'logo-anabelleadershipacademy.png'
+var img20 = 'logo-empower-nigeria.png'
+var img21 = 'logo-jobs-for-nigeria.png'
+var img22 = 'logo-manifesto.png'
+var img23 = 'logo-nigeria-leadership-aummit.png'
 
 
 /*******************************************************************************
@@ -71,6 +78,14 @@ var style = bel`
       background-color: #a6a8a6;
       color: red;
       width: 70%
+    }
+
+  div {
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      margin: according to the image size;
     }
   </style>
 `
@@ -139,12 +154,39 @@ var footer2 = bel`
       </nav>
   </footer>
 `
+var foot1 = bel`
+	<foot>
+	<div class="anabel">
+	  <li>
+	    <img src=${base + img17}>
+	  </li>
+	  <li>
+        <img src=${base + img18}> 
+	  </li>
+	  <li>
+	    <img src=${base + img19}>
+	  </li>
+	  <li>
+	    <img src=${base + img20}>
+	  </li>
+	  <li>
+	    <img src=${base + img21}>
+	  </li>
+	  <li>
+	    <img src=${base + img22}>
+	  </li>
+	  <li>
+	    <img src=${base + img23}>
+	  </li>
+
+`
 /*******************************************************************************
   ASSEMBLE 
 *******************************************************************************/
 document.head.appendChild(style)
 document.body.appendChild(menu)
 document.body.appendChild(screen)
+document.body.appendChild(foot1)
 document.body.appendChild(footer1)
 document.body.appendChild(footer2)
 /*******************************************************************************
