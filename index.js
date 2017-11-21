@@ -145,15 +145,11 @@ To be the most trusted and respected professional services firm recognized by ou
 
 `
 var footer2 = bel`
-    <footer>
     <div class="wrapper">
-      <nav>
         <ul>
-          <li><a href="about.html">ABOUT US</a></li>
+          <li align="left"><a href="about.html">ABOUT US</a></li>
         </ul>
-      </nav>
      </div>
-  </footer>
 `
 var foot1 = bel`
 	<foot>
@@ -206,13 +202,5 @@ function cycle() {
 }
 
 cycle()
-
-
-
-var str1 = src = image/bckgrod.jpeg;
-document.getElementById("divtest").style.backgroundImage = str1 ;
-
-var str2 = src = image/bckgrod.jpeg;
-document.getElementById("imgtest").src = str2;
 
 
