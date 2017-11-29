@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+  <head>
+    <title>Images and Legends Switch</title>
+<style type="text/css">
+body {margin: 0px; border: 0px; background-color: #b5e3ee;}
+
+div#wrapper {width: 520px; height: 307px; margin-left: auto; margin-right:auto; background-color: #b5f6b0; margin-top: 30px; margin-bottom: 30px; padding: 5px; border: 1px solid #851e0d;
+}
+
+div#one, div#two, div#three, div#four, div#five, div#six {float: right; border: 1px solid #851E0D; width: 405px; height: 305px; max-width: 405px;}
+  
+div#navwrap {float: left; clear:all; width: 105px; height: 305px; margin-left: 0px; border: 1px solid #851E0D;
+}
+
+div#nav1, div#nav2, div#nav3, div#nav4, div#nav5, div#nav6 {float: left; width: 105px; height:50px; font-family: tahoma, verdana, times, sans-serif; font-size: 10px; color: #90232e; background-color: #a39ad5; border-bottom: 1px solid #851E0D;}
+
+#image-switch #two, #image-switch #three, #image-switch #four, #image-switch #five, #image-switch #six {
+display:none;
+}
+
+.legend {font-family: tahoma, verdana, times, sans-serif; font-size: 12px; color: #90232e; text-align: center;}
+ul {list-style-type: none; font-family: tahoma, verdana, times, sans-serif; font-size: 10px; color: #90232e;}
+</style>
+
+<script type="text/javascript">
+function switch1(div) {
+if (document.getElementById('one')) {
+var option=['one','two','three','four','five','six'];
+for(var i=0; i<option.length; i++) 
+{ obj=document.getElementById(option[i]);
+obj.style.display=(option[i]==div)? "block" : "none"; }
+}
+}
+//
+function switchImg(i){
+document.image["wine"].src = i;
+}
+</script>
+</head>
+
+  <body>
+<div id="wrapper">
+
+<div id="image-switch">
+
+<div id="one">
+<div class="legend">
+<img src="image/picture1.jpg"  height="280px" width="405px" alt="Photo 1">
+<p>Picture 1</p>
+</div></div>
+
+<div id="two">
+<div class="legend">
+<img src="image/picture2.jpg"  height="280px" width="405px" alt="Photo 2">
+<p>Picture 2</p>
+</div></div>
+
+<div id="three">
+<div class="legend">
+<img src="image/picture3.jpg"  height="280px" width="405px" alt="Photo 3">
+<p>Picture 3</p>
+</div></div>
+
+<div id="four">
+<div class="legend">
+<img src="image/picture4.jpg"  height="280px" width="405px" alt="Photo 4">
+<p>Picture 4</p>
+</div></div>
+
+<div id="five">
+<div class="legend">
+<img src="image/picture5.jpg" height="280px" width="405px" alt="Photo 5">
+<p>Picture 5</p>
+</div></div>
+<div id="six">
+<div class="legend">
+<img src="image/picture6.jpg"  height="280px" width="405px" alt="Photo 6">
+<p>Picture 6</p>
+</div></div>
+
+</div>
+<div id="navwrap">
+<div id="nav1"><a onmouseover="switch1('one');"><img src="image/thumb1.jpg" alt="Thumb 1"><br>Thumb 1</a></div>
+<div id="nav2"><a onmouseover="switch1('two');"><img src="image/thumb2.jpg" alt="Thumb 2"><br>Thumb 2</a></div>
+<div id="nav3"><a onmouseover="switch1('three');"><img src="image/thumb3.jpg" alt="Thumb 3"><br>Thumb 3</a></div>
+<div id="nav4"><a onmouseover="switch1('four');"><img src="image/thumb4.jpg" alt="Thumb 4"><br>Thumb 4</a></div>
+<div id="nav5"><a onmouseover="switch1('five');"><img src="image/thumb5.jpg" alt="Thumb 5"><br>Thumb 5</a></div>
+<div id="nav6"><a onmouseover="switch1('six');"><img src="image/thumb6.jpg" alt="Thumb 6"><br>Thumb 6</a></div>
+</div>
+
+<div class="clear">
+</div>
+</div>
+
+  </body>
+</html>s

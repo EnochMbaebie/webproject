@@ -98,12 +98,10 @@ var style = bel`
       display: block;
       color: #000;
       padding: 8px 16px;
-      width: 100px;
       text-decoration: none;
       float: center;
       margin-top: 30 px;
       font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-      text-align: center;
       border-bottom: 1px solid #555;
     }
   li a:hover:not(.active) {
@@ -113,9 +111,6 @@ var style = bel`
       width: 150%
     }
   a {
-    width: 150 px;
-    color: white;
-    display: block;
     font-size: 15px;
     text-align: center;
     padding:10px;
@@ -127,17 +122,28 @@ var style = bel`
 
   ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     position:absolute;
     }
+
   ul li {
       display: inline-block;
       margin: auto;
-      padding: 10px
-      float: center;
-      text-align: right
+      padding: 1px
+      float: left;
+      text-align: center
+      width: none;
+      height: none;
+      background-color: none;
+      opacity: none;
+      font-size: none;
     }
+
+  ul li ul li {
+    display: none;
+    }
+
   .inner {
     width: 100;
     float: none;
@@ -194,20 +200,37 @@ var style = bel`
 var menu = bel`
   <div class="Menu">
       <div class="Anabel-Group-Logo">
+      </div>
         <a href="index.html"><img src=${base + logo}></a>
-       <ul>
-      <li><a href="index.html" class="current">HOME</a></li>
-      <li><a href="aboutus.html" >ABOUT US</a></li>
-      <li><a href="strategy.html" >STRATEGY</a></li>
-      <li><a href="capital.html">GLOBAL CAPITAL</a></li>
-      <li><a href="leadership.html">LEADERSHIP</a></li>
-      <li><a href="entreprenuers.html">ENTREPRENUERSHIP</a></li>
-      <li><a href="modular.html">MASTER CLASS</a></li>
-      <li><a href="business.html">BUSINESS EXCELLENCE</a></li>
+      <ul>
+	      <li><a href="index.html" class="current">HOME</a>
+        </li>
+	      <li><a href="#" >ABOUT US </a>
+      		  <ul>
+    			    <li><a href="about.html">ABOUT ANABEL GROUP</a>
+              </li>
+              <li><a href="Anabelgallery.html">ANABEL GALLERY</a>
+              </li>
+              <li><a href="contact.html">CONTACT US</a>
+              </li>
+    	     </ul>   
+        </li>
+	      <li><a href="strategy.html">STRATEGY</a>
+        </li>
+	      <li><a href="globalcapital.html">GLOBAL CAPITAL</a>
+        </li>
+	      <li><a href="leadership.html">LEADERSHIP</a>
+        </li>
+	      <li><a href="entreprenuership.html">ENTREPRENUERSHIP</a>
+        </li>
+	      <li><a href="masterclass.html">MASTER CLASS</a>
+        </li>
+	      <li><a href="bizexcellence.html">BUSINESS EXCELLENCE</a>
+        </li>
       </ul>
   </div>
-  </div>
 `
+
 var screen = bel`
   <div class="Screen">
     <img class="mySlides" src=${base + img1} style="width:85.5%">
@@ -227,17 +250,17 @@ var screen = bel`
     <img class="mySlides" src=${base + img15} style="width:85.5%">
     </div>
 `
-var footer1 = bel`
-<div class="inner">
-  <h2> ANABEL GROUP </h2>
-  <h2>Mission: </h2>
-  <p> To provide the Leadership of emerging markets’ private and public sector institutions the strategic support, the tools,
-   the networks and the capital they need<br> to develop local value chains and local capacity to prosper locally and to compete globally.</p>
-  <h2> Vision: </h2>
-  <p>To be the premier global partner for Leaders, Entrepreneurs and Business People seeking to invest, build ecosystems,
-  extend value chains and <br>to build capacity in the emerging markets  </p>
- </div>
-`
+// // var footer1 = bel`
+// // <div class="inner">
+// //   <h2> ANABEL GROUP </h2>
+// //   <h2>Mission: </h2>
+// //   <p> To provide the Leadership of emerging markets’ private and public sector institutions the strategic support, the tools,
+// //    the networks and the capital they need<br> to develop local value chains and local capacity to prosper locally and to compete globally.</p>
+// //   <h2> Vision: </h2>
+// //   <p>To be the premier global partner for Leaders, Entrepreneurs and Business People seeking to invest, build ecosystems,
+// //   extend value chains and <br>to build capacity in the emerging markets  </p>
+// //  </div>
+// `
 
 var foot1 = bel`
 <section class="bottom-logo">
@@ -255,7 +278,6 @@ var foot1 = bel`
         </div> 
     </div>
 </section>
-
 `
 var footsocial = bel`
   <div>
@@ -271,9 +293,9 @@ var footsocial = bel`
 document.head.appendChild(style)
 document.body.appendChild(menu)
 document.body.appendChild(screen)
-document.body.appendChild(footer1)
+// document.body.appendChild(footer1)
 document.body.appendChild(foot1)
-/*document.body.appendChild(footsocial)*/
+document.body.appendChild(footsocial)
 /*******************************************************************************
   MORE JAVASCRIPT
 *******************************************************************************/
